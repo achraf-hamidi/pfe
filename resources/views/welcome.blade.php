@@ -51,7 +51,7 @@
             <div class="col-lg-4">
               <h2>User</h2>
               <p>This is the place for User.</p>
-            <p><a class="btn btn-primary" href="{{ url('/sss')}}" role="button">Login as user &raquo;</a></p>
+            <p><a class="btn btn-primary" href="{{ url('/article')}}" role="button">Login as user &raquo;</a></p>
             </div>
           </div>
 

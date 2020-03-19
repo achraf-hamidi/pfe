@@ -99,11 +99,12 @@
                 @endforeach
             </div>
 
+
             @endif
 
 
             <input type="text"name="TypeNori" class="form-control "value="{{old('TypeNori')}}">
-          
+
 
         </div>
 

@@ -117,7 +117,7 @@
                     <!--== Logo Start ==-->
 
                     <div class="col-lg-4">
-                        <a href="index.html" class="logo" >
+                        <a href="{{ url('/article')}}" class="logo" >
                             <img src="assets/img/logo.png" alt="JSOFT">
                         </a>
                     </div>
@@ -219,7 +219,7 @@
                     {{-- <div class="single-car-preview">
                         <img src="{{ url('storage/'.$anim->Photo)}}" width="1000px" height="667px"  alt="JSOFT">
                     </div> --}}
-                    <iframe width="420" height="345" src="https://www.youtube.com/watch?v=c1xLMaTUWCY">
+                    <iframe width="420" height="345" src="https://www.youtube.com/watch?v=43dV7td43a4">
 
                     </iframe>
 
@@ -244,7 +244,7 @@
                         <div class="review-area">
                             <h3>Write Your Comment</h3>
                             <div class="review-form">
-                                <form action="index.html">
+                                <form action="#">
                                     <div class="row">
                                         <div class="col-lg-6 col-md-6">
                                             <div class="name-input">
@@ -283,61 +283,13 @@
 
                         <div class="sidebar-body">
 
-                            <div id="columnchart_material" style="width: 500px; height: 250px;"></div>
+                            <div id="columnchart_material" style="width: 400px; height: 250px;"></div>
 
                         </div>
                     </div>
                     <!-- Single Sidebar End -->
 
-                    <!-- Single Sidebar Start -->
-                    <div class="single-sidebar">
-                        <h3>Rental Tips</h3>
 
-                        <div class="sidebar-body">
-                            <ul class="recent-tips">
-                                <li class="single-recent-tips">
-                                    <div class="recent-tip-thum">
-                                        <a href="#"><img src="assets/img/we-do/service1-img.png" alt="JSOFT"></a>
-                                    </div>
-                                    <div class="recent-tip-body">
-                                        <h4><a href="#">How to Enjoy Losses Angeles Car Rentals</a></h4>
-                                        <span class="date">February 5, 2018</span>
-                                    </div>
-                                </li>
-
-                                <li class="single-recent-tips">
-                                    <div class="recent-tip-thum">
-                                        <a href="#"><img src="assets/img/we-do/service3-img.png" alt="JSOFT"></a>
-                                    </div>
-                                    <div class="recent-tip-body">
-                                        <h4><a href="#">How to Enjoy Losses Angeles Car Rentals</a></h4>
-                                        <span class="date">February 5, 2018</span>
-                                    </div>
-                                </li>
-
-                                <li class="single-recent-tips">
-                                    <div class="recent-tip-thum">
-                                        <a href="#"><img src="assets/img/we-do/service2-img.png" alt="JSOFT"></a>
-                                    </div>
-                                    <div class="recent-tip-body">
-                                        <h4><a href="#">How to Enjoy Losses Angeles Car Rentals</a></h4>
-                                        <span class="date">February 5, 2018</span>
-                                    </div>
-                                </li>
-
-                                <li class="single-recent-tips">
-                                    <div class="recent-tip-thum">
-                                        <a href="#"><img src="assets/img/we-do/service3-img.png" alt="JSOFT"></a>
-                                    </div>
-                                    <div class="recent-tip-body">
-                                        <h4><a href="#">How to Enjoy Losses Angeles Car Rentals</a></h4>
-                                        <span class="date">February 5, 2018</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Single Sidebar End -->
 
                     <!-- Single Sidebar Start -->
                     <div class="single-sidebar">

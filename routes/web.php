@@ -26,7 +26,9 @@ Route::get('/more', function () {
 Route::get('/vvv', function () {
     return view('graph');
 });
-Route::get('/sss', 'UserController@index');
+//Route::get('/sss', 'UserController@index');
+Route::get('/article', 'UserController@index');
+
 
 
 
@@ -153,9 +155,6 @@ Route::get('/users/logout', 'Auth\LoginController@userlogout')->name('admin.logo
     Route::delete('animals/{id}', 'AnimalController@destroy');
 
 
-    Route::middleware(['auth.apikey'])->get('/test', function (AnimalRequest $request) {
-        return $request->Animal(); // Returns the associated model to the API key
-    });
 
 
 
