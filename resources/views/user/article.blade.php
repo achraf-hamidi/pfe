@@ -84,8 +84,7 @@
                                         <li><a href="{{ url('/mammifers')}}">Mammifers</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="services.html">About</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+
 
                             </ul>
 
@@ -103,7 +102,7 @@
 
                             <div class="search-box">
                                 <input class="search-txt" type="text" name="q" placeholder="Type to search">
-                                
+
                                 <a type="submit" class="search-btn">
                                     <img src="assets/img/search.png" alt="JSOFT" width = "20px">
                                 </a>

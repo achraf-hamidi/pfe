@@ -69,7 +69,7 @@ Route::post('/redmore', function () {
 Route::get('/reptiles', function () {
 
 
-        $ListAnimal = Animal::where('Categorie','LIKE','Reptiles')
+        $ListAnimal = Animal::where('Categorie','LIKE','lézard')
                            ->get();
 
          if (count( $ListAnimal)>0) {

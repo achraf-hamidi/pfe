@@ -44,8 +44,10 @@
             <div class="col-lg-6">
               <h2>Admin</h2>
               <p>This is the place for admins. </p>
-              <p><a class="btn btn-primary" href="{{ route('login') }}" role="button">Login as Admin &raquo;</a></p>
+              <p><a class="btn btn-primary" href="{{ url('/login') }}" role="button">Login as Admin &raquo;</a></p>
             </div>
+
+
 
 
             <div class="col-lg-4">

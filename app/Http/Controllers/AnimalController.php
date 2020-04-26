@@ -38,19 +38,26 @@ class AnimalController extends Controller
 
         $animal->TypeNori= $req->input('TypeNori');
 
+        $animal->urlVideo= $req->input('urlVideo');
+
         $animal->Photo= $req->photo->store('animals-images');
 
         $animal->Zone= $req->input('zone');
 
         $animal->Desc= $req->input('Desc');
 
-
-        $animal->save();
-
-        session()->flash('success','you add an animal with success');
-
+        if (auth()->user()->Animals()->save($animal))
 
         return redirect('animals');
+
+
+        else
+        return session()->Session::flash('alert-class', 'alert-danger');
+
+
+
+
+
 
 
     }
@@ -70,7 +77,7 @@ class AnimalController extends Controller
         return view('animal.edit',['anim'=>$anim]);
 
     }
-    
+
 
     //permet de modifer un animal
     public function update(AnimalRequest $req,$id)
@@ -81,6 +88,7 @@ class AnimalController extends Controller
         $animal->Categorie= $req->input('Categorie');
         $animal->Son= $req->son->store('animal-son');
         $animal->TypeNori= $req->input('TypeNori');
+        $animal->urlVideo= $req->input('urlVideo');
         $animal->Photo= $req->photo->store('animal-images');
         $animal->Desc= $req->input('Desc');
         $animal->Zone= $req->input('zone');

@@ -34,6 +34,25 @@
 
             </div>
 
+            <div class="form-group @if ($errors->get('urlVideo')) has-error @endif">
+
+                <label for=""> URl</label>
+                @if ($errors->get('urlVideo'))
+
+                <div class=" alert alert-danger ">
+                    @foreach ($errors->get('urlVideo') as $item)
+                         <li >{{ $item }} </li>
+                    @endforeach
+                </div>
+
+                @endif
+
+
+                <input type="text" name="urlVideo"class="form-control " value="{{old('urlVideo')}}">
+
+
+            </div>
+
             <div class="form-group @if ($errors->get('Categorie')) has-error @endif">
                   <label for=""> Categorie</label>
 
@@ -72,6 +91,8 @@
          @endif
             <input type="file"name="photo" class="form-control "value="{{old('photo')}}">
         </div>
+
+
 
         <div class="form-group  @if ($errors->get('son')) has-error @endif">
             <label for=""> son </label>

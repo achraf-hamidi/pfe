@@ -31,6 +31,7 @@ class AnimalRequest extends FormRequest
             'Categorie'=> 'required',
             'son'=>'required|mimes:application/octet-stream,audio/mpeg,mpga,mp3,wav',
             'TypeNori'=> 'required',
+            'urlVideo'=> 'required',
             'Zone'=>'min:3',
             'Desc'=>'required|min:3'
 

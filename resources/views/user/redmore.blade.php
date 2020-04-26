@@ -215,20 +215,27 @@
             <!-- Car List Content Start -->
             <div class="col-lg-8">
                 <div class="car-details-content">
-                    <h2>WLIQUAM SIT AMET URNA EULLAM</h2>
-                    {{-- <div class="single-car-preview">
-                        <img src="{{ url('storage/'.$anim->Photo)}}" width="1000px" height="667px"  alt="JSOFT">
-                    </div> --}}
-                    <iframe width="420" height="345" src="https://www.youtube.com/watch?v=43dV7td43a4">
+                    <h2>{{$anim->Nom}}</h2>
 
-                    </iframe>
+
+
+
+                     <div class="single-car-preview">
+                        <img src="{{ url('storage/'.$anim->Photo)}}" width="1000px" height="667px"  alt="JSOFT">
+                    </div>
+
 
                     <div class="car-details-info blog-content">
                         <div>
                             <audio src="{{ url('storage/'.$anim->Son)}}" controls>
                                 no way
                             </audio>
-                        </div>
+                     </div>
+
+
+
+
+
                         <p>
                             {{$anim->Desc}}
                         </p>
@@ -244,6 +251,7 @@
                         <div class="review-area">
                             <h3>Write Your Comment</h3>
                             <div class="review-form">
+                                <button class="btn btn-info btn-lg  col-md-4" style="float: none;" onclick="window.print();" id="print"><i class="fa fa-file-pdf-o"></i> &nbsp; Imprimer</button>
                                 <form action="#">
                                     <div class="row">
                                         <div class="col-lg-6 col-md-6">
@@ -265,6 +273,9 @@
 
                                     <div class="input-submit">
                                         <button type="submit">Comment</button>
+
+
+
                                     </div>
                                 </form>
                             </div>
@@ -291,7 +302,7 @@
 
 
 
-                    <!-- Single Sidebar Start -->
+                    {{-- <!-- Single Sidebar Start -->
                     <div class="single-sidebar">
                         <h3>Connect with Us</h3>
 
@@ -303,6 +314,18 @@
                                 <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
                                 <a href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
                             </div>
+                        </div>
+                    </div>
+                    <!-- Single Sidebar End --> --}}
+                    <!-- Single Sidebar Start -->
+                    <div class="single-sidebar" >
+                        <h3>video</h3>
+
+                        <div class="sidebar-body"  width = "120px">
+                            @php
+                            //    echo {{$anim->urlVideo}};
+                               echo $anim->urlVideo;
+                            @endphp
                         </div>
                     </div>
                     <!-- Single Sidebar End -->
@@ -450,3 +473,5 @@
 </body>
 
 </html>
+
+
